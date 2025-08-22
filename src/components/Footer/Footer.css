@@ -1,0 +1,113 @@
+.footer {
+  background-color: #f8f9fa;
+  color: #666;
+  padding: 2rem 0;
+  margin-top: auto;
+  border-top: 1px solid #e9ecef;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .footer {
+    transition: all 0.3s ease;
+  }
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-section h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .footer-section p {
+    transition: color 0.3s ease;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.linkedin-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #000000;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .linkedin-icon {
+    transition: all 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .linkedin-icon:hover {
+    color: #333333;
+    transform: translateY(-2px);
+  }
+}
+
+.dark-mode .footer {
+  background-color: #2d2d2d;
+  color: #b0b0b0;
+  border-top: 1px solid #404040;
+}
+
+.dark-mode .footer-section h3 {
+  color: #e0e0e0;
+}
+
+.dark-mode .footer-section p {
+  color: #b0b0b0;
+}
+
+.dark-mode .linkedin-icon {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-content {
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-section p {
+    font-size: 0.75rem;
+  }
+} 

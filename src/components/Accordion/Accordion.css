@@ -1,0 +1,149 @@
+.accordion-item {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto 16px auto;
+}
+
+.accordion-item,
+.projects-accordions {
+  min-width: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .accordion-item {
+    transition: all 0.3s ease;
+  }
+}
+
+.dark-mode .accordion-item {
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header {
+  margin: 0;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 20px 24px;
+  background: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dark-mode .accordion-button {
+  background: #000000;
+  color: #ffffff;
+}
+
+.accordion-button:hover {
+  background-color: #f8f9fa;
+}
+
+.dark-mode .accordion-button:hover {
+  background-color: #000000;
+}
+
+.accordion-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.accordion-button.expanded {
+  background-color: #e3f2fd;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dark-mode .accordion-button.expanded {
+  background-color: #000000;
+  border-bottom-color: #404040;
+}
+
+.accordion-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.accordion-icon {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+  transition: transform 0.3s ease;
+  min-width: 20px;
+  text-align: center;
+}
+
+.accordion-button.expanded .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-panel.expanded {
+  max-height: none;
+}
+
+.accordion-content {
+  padding: 24px;
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.dark-mode .accordion-content {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .accordion-button {
+    padding: 14px 16px;
+  }
+
+  .accordion-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-button {
+    padding: 12px 14px;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    padding: 14px;
+  }
+}
