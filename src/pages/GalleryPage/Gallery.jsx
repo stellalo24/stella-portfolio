@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import GalleryCard from '../../components/GalleryCard/GalleryCard';
 import './Gallery.css';
+import travel1 from '@/assets/Travel1.JPG';
+import travel2 from '@/assets/Travel2.JPG';
+import travel3 from '@/assets/Travel3.jpg';
+import travel4 from '@/assets/Travel4.jpg';
+import food1 from '@/assets/Food1.JPG';
+import food2 from '@/assets/Food2.JPG';
+import food3 from '@/assets/Food3.JPG';
+import food4 from '@/assets/Food4.JPG';
 
 function Gallery() {
 
@@ -10,28 +18,28 @@ function Gallery() {
       id: 1,
       title: "Kahala Beach Bliss",
       category: "Travel",
-      image: "/Travel1.JPG",
+      image: travel1,
       description: "Experience the tranquil shores of Kahala Beach in Oahu, Hawaii, USA, where crystal-clear waters and palm-lined sands create the perfect island escape."
     },
     {
       id: 2,
       title: "Brooklyn Bridge Views",
       category: "Travel",
-      image: "/Travel2.JPG",
+      image: travel2,
       description: "In Dumbo, Brooklyn, New York City, USA, I stood between cobblestone streets and the towering Manhattan Bridge, with the skyline peeking through like a postcard come to life."
     },
     {
       id: 3,
       title: "Volcano Trails",
       category: "Travel",
-      image: "/Travel3.jpg",
-      description: "Walking through Hawai’i Volcanoes National Park on the Big Island, Hawaii, USA, I could feel the heat from the earth and see where molten lava had shaped the land."
+      image: travel3,
+      description: "Walking through Hawai'i Volcanoes National Park on the Big Island, Hawaii, USA, I could feel the heat from the earth and see where molten lava had shaped the land."
     },
     {
       id: 4,
       title: "Colorful Guanajuato",
       category: "Travel",
-      image: "/Travel4.jpg",
+      image: travel4,
       description: "In Guanajuato, Mexico, I wandered narrow streets painted every color imaginable, each turn revealing another slice of history and life buzzing with music and laughter."
     },
 
@@ -40,28 +48,28 @@ function Gallery() {
       id: 5,
       title: "Sweet Pineapple Treat",
       category: "Food",
-      image: "/Food1.JPG",
+      image: food1,
       description: "At the Dole Plantation in Oahu, Hawaii, USA, I held the biggest, juiciest pineapple I've ever seen — sweet, golden, and fresh from the island."
     },
     {
       id: 6,
       title: "Chelsea Market Oysters",
       category: "Food",
-      image: "/Food2.JPG",
+      image: food2,
       description: "In New York City's Chelsea Market, USA, I enjoyed a platter of fresh oysters, squeezing lemon over each one while soaking in the lively market vibes."
     },
     {
       id: 7,
       title: "Elegant RH Brunch",
       category: "Food",
-      image: "/Food3.JPG",
+      image: food3,
       description: "In Toronto, Canada, at RH's beautiful courtyard, I sat beneath olive trees, sipping coffee and savoring a perfectly plated brunch."
     },
     {
       id: 8,
       title: "Cozy Italian Dinner",
       category: "Food",
-      image: "/Food4.JPG",
+      image: food4,
       description: "In Toronto, Canada, at a warm, intimate Italian restaurant, I twirled pasta and shared plates of rich, flavorful dishes that felt like a taste of Italy."
     }
   ];

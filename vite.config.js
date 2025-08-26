@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
+
 export default defineConfig({
+  base: "/stella-portfolio/",
   plugins: [react()],
-  base: "/stella-portfolio",
+  resolve: { alias: { "@": "/src" } },
 });
