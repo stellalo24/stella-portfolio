@@ -184,17 +184,7 @@
   }
 }
 
-.gallery-btn {
-  background-color: #D4A373;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .gallery-btn:hover {
-    background-color: #c19266;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(212, 163, 115, 0.3);
-  }
-}
 
 .action-btn:active {
   transform: translateY(0);

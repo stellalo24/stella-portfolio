@@ -46,12 +46,7 @@ function Home({ setPage }) {
               >
                 Projects
               </button>
-              <button
-                className="action-btn gallery-btn"
-                onClick={() => handleNavClick("/Gallery")}
-              >
-                Gallery
-              </button>
+
               <button
                 className="action-btn contact-btn"
                 onClick={() => handleNavClick("/Contact")}

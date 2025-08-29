@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/HomePage/Home";
 import About from "./pages/AboutPage/About";
 import Projects from "./pages/ProjectsPage/Projects";
-import Gallery from "./pages/GalleryPage/Gallery";
+
 import Contact from "./pages/ContactPage/Contact";
 import Footer from "./components/Footer/Footer";
 import './App.css';
@@ -38,7 +38,7 @@ function App() {
         {page === "/" && <Home setPage={setPage} />}
         {page === "/About" && <About />}
         {page === "/Projects" && <Projects />}
-        {page === "/Gallery" && <Gallery />}
+
         {page === "/Contact" && <Contact />}
       </main>
       <Footer />
